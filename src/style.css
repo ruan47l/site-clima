@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/src/ceu.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #58929ddb;
+    border-radius: 1em 1em;
+    width: 95vw;
+
+    & .containerClima{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .blocoInput{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2.5em;
+            border-bottom: 2px solid #fff;
+
+            & h2{
+                padding: 0.5em;
+                font-size: 1.3em;
+                color: #fff;
+            }
+
+            & .search{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1em;
+
+                & input{
+                    font-size: 0.9em;
+                    margin-right: 0.5em;
+                    border-radius: 0.5em;
+                }
+
+                & button{
+                    padding: 0.5em;
+                    width: 3em;
+                    border: none;
+                    border-radius: 0.5em;
+                    background-color: #CAF0F8;
+                    cursor: pointer;
+                    transition: all 0.5s;
+
+                    & i{
+                        color: #00B4D8;
+                    }
+                    &:hover{
+                        background-color: #00B4D8;
+                        transition: all 0.5s;
+
+                        & i{
+                            color: #CAF0F8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .blocoInformacoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+
+        & .blocoCidade{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1em;
+
+            & i{
+                font-size: 1.3em;
+                margin-right: 0.2em;
+                color: #fff;
+            }
+            p{
+                font-size: 1.2em;
+                margin-right: 0.5em;
+                color: #fff;
+            }
+            img{
+                width: 2em;
+                height: 2em;
+            }
+        }
+    }
+    & .temperatura{
+        margin-bottom: 0.8em;
+        color: #fff;
+        text-align: center;
+    }
+    & .blocoTemperatura{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.8em;
+        
+        & p{
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    & .blocoHumidade{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+
+        & :nth-child(1){
+            font-size: 1.5em;
+            margin-right: 0.3em;
+            color: #fff;
+        }
+        & :nth-child(2){
+            font-size: 1.5em;
+            padding: 0.3em;
+            margin-right: 0.3em;
+            border-right: 2px solid #fff;
+            color: #fff;
+        }
+        & :nth-child(3){
+            font-size: 1.5em;
+            margin-right: 0.3em;
+            color: #fff;
+        }
+        & :nth-child(4){
+            font-size: 1.5em;
+            color: #fff;
+        }
+    }
+}
+
+@media(min-width: 426px){
+    main{
+        width: 25em;
+    }
+}

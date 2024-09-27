@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>site-clima</title>
+
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="src/style.css">
+
+</head>
+<body>
+  <main>
+    <section class="containerClima">
+        <section class="blocoInput">
+            <h2>
+                Confira o clima de sua cidade
+            </h2>
+            <div class="search">
+                <input type="text" id="inputSearch" autocomplete="off">
+                <button id="search">
+                    <i class="ri-search-2-fill"></i>
+                </button>
+            </div>
+        </section>
+        <section class="blocoInformacoes">
+            <div class="blocoCidade">
+                <i class="ri-map-pin-line"></i>
+                <p id="cidade">brasília</p>
+                <img src="https://flagsapi.com/BR/flat/64.png" id="bandeira" alt="">
+            </div>
+            <p class="temperatura">
+            
+            </p>
+            <div class="blocoTemperatura">
+                <p id="condicao">Calor</p>
+                <img src="http://openweathermap.org/img/wn/01d.png" id="imgClima" alt="">
+            </div>
+            <div class="blocoHumidade">
+                <i class="ri-drop-fill"></i>
+                <p id="humidade">50%</p>
+                <i class="ri-windy-line"></i>
+                <p id="vento">3KM/H</p>
+            </div>
+        </section>
+    </section>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
